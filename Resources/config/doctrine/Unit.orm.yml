@@ -1,0 +1,21 @@
+MESD\Standard\UnitBundle\Entity\Unit:
+    type: entity
+    table: unit
+    repositoryClass: MESD\Standard\UnitBundle\Repository\UnitRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        longName:
+            column: long_name
+            type: string
+            length: 64
+        shortName:
+            column: short_name
+            type: string
+            length: 16
+        time:
+            type: boolean
+    lifecycleCallbacks: {  }
