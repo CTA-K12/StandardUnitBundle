@@ -35,6 +35,7 @@ class UnitAtom extends AbstractType
                 , 'label'         => 'Unit'
                 , 'label_attr'    => array( 'class' => 'txtl' )
                 , 'data_class'    => null
+                , 'empty_value'   => ''
                 , 'query_builder' =>
                 function ( $repository ) use ( $user ) {
                     $qb = $repository->createQueryBuilder( 'u' )

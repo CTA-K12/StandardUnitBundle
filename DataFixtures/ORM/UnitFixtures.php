@@ -15,7 +15,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object = new Unit();
         $object->setLongName( 'Each' );
         $object->setShortName( 'ea' );
-        $object->setTime( false );
+        $object->setTime( true );
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -24,7 +24,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object = new Unit();
         $object->setLongName( 'Time(s)' );
         $object->setShortName( 'x' );
-        $object->setTime( false );
+        $object->setTime( true );
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
