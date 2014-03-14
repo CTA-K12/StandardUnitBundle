@@ -18,4 +18,8 @@ MESD\Standard\UnitBundle\Entity\Unit:
             length: 16
         time:
             type: boolean
+        description:
+            column: description
+            type: string
+            nullable: true
     lifecycleCallbacks: {  }

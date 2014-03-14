@@ -29,6 +29,11 @@ class Unit
      */
     private $time;
 
+    /**
+     * @var string $description
+     */
+    private $description;
+
 
     /**
      * Get id
@@ -116,6 +121,29 @@ class Unit
     public function getTime()
     {
         return $this->time;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Unit
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
     }
 
 
