@@ -16,6 +16,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Each' );
         $object->setShortName( 'ea' );
         $object->setTime( true );
+        $object->setDescription('Session(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -25,6 +26,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Time(s)' );
         $object->setShortName( 'x' );
         $object->setTime( true );
+        $object->setDescription('Time(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -34,6 +36,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Second' );
         $object->setShortName( 's' );
         $object->setTime( true );
+        $object->setDescription('Second(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -43,6 +46,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Minute' );
         $object->setShortName( 'm' );
         $object->setTime( true );
+        $object->setDescription('Minute(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -52,6 +56,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Hour' );
         $object->setShortName( 'h' );
         $object->setTime( true );
+        $object->setDescription('Hour(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -61,6 +66,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Day' );
         $object->setShortName( 'd' );
         $object->setTime( true );
+        $object->setDescription('Day(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -70,6 +76,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Week' );
         $object->setShortName( 'w' );
         $object->setTime( true );
+        $object->setDescription('Week(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -79,6 +86,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Month' );
         $object->setShortName( 'M' );
         $object->setTime( true );
+        $object->setDescription('Month(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -88,6 +96,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Quarter' );
         $object->setShortName( 'q' );
         $object->setTime( true );
+        $object->setDescription('Quarter(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -97,6 +106,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Trimester' );
         $object->setShortName( 't' );
         $object->setTime( true );
+        $object->setDescription('Trimester(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -106,6 +116,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Semester' );
         $object->setShortName( 'S' );
         $object->setTime( true );
+        $object->setDescription('Semester(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -115,6 +126,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Year' );
         $object->setShortName( 'y' );
         $object->setTime( true );
+        $object->setDescription('Year(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -125,6 +137,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Cent' );
         $object->setShortName( 'c' );
         $object->setTime( false );
+        $object->setDescription('Cent(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
@@ -134,6 +147,7 @@ class UnitFixtures extends AbstractDependentFixture
         $object->setLongName( 'Dollar' );
         $object->setShortName( '$' );
         $object->setTime( false );
+        $object->setDescription('Dollar(s)');
         $manager->persist( $object );
         $this->addReference( 'unit_' . $i, $object );
         $i++;
