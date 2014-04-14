@@ -1,6 +1,6 @@
 <?php
 
-namespace MESD\Standard\UnitBundle\FormType\Atom;
+namespace Mesd\Standard\UnitBundle\FormType\Atom;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -31,7 +31,7 @@ class TimeUnitAtom extends AbstractType
         $user = $this->user;
         $resolver->setDefaults(
             array(
-                'class'           => 'MESD\Standard\UnitBundle\Entity\Unit'
+                'class'           => 'Mesd\Standard\UnitBundle\Entity\Unit'
                 , 'label'         => 'Unit'
                 , 'label_attr'    => array( 'class' => 'txtl' )
                 , 'data_class'    => null

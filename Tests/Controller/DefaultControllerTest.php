@@ -1,6 +1,6 @@
 <?php
 
-namespace MESD\Standard\UnitBundle\Tests\Controller;
+namespace Mesd\Standard\UnitBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace MESD\Standard\UnitBundle\DependencyInjection;
+namespace Mesd\Standard\UnitBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

@@ -1,9 +1,9 @@
 <?php
-namespace MESD\Standard\UnitBundle\DataFixtures\ORM;
+namespace Mesd\Standard\UnitBundle\DataFixtures\ORM;
 
-use MESD\Standard\UnitBundle\Entity\Unit;
+use Mesd\Standard\UnitBundle\Entity\Unit;
 use Doctrine\Common\Persistence\ObjectManager;
-use MESD\DoctrineExtensions\DependentFixtureBundle\DataFixtures\AbstractDependentFixture;
+use Mesd\DoctrineExtensions\DependentFixtureBundle\DataFixtures\AbstractDependentFixture;
 
 class UnitFixtures extends AbstractDependentFixture
 {

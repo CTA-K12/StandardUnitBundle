@@ -1,3 +1,3 @@
 mesd_standard_unit_homepage:
     pattern:  /hello/{name}
-    defaults: { _controller: MESDStandardUnitBundle:Default:index }
+    defaults: { _controller: MesdStandardUnitBundle:Default:index }

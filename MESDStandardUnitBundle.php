@@ -1,9 +1,9 @@
 <?php
 
-namespace MESD\Standard\UnitBundle;
+namespace Mesd\Standard\UnitBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class MESDStandardUnitBundle extends Bundle
+class MesdStandardUnitBundle extends Bundle
 {
 }
