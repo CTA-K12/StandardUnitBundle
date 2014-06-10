@@ -1,6 +1,6 @@
 <?php
 
-namespace Mesd\Standard\UnitBundle\Repository;
+namespace Mesd\StandardUnitBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 

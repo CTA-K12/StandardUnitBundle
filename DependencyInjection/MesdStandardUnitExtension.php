@@ -1,6 +1,6 @@
 <?php
 
-namespace Mesd\Standard\UnitBundle\DependencyInjection;
+namespace Mesd\StandardUnitBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

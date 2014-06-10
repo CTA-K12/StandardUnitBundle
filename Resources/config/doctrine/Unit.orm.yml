@@ -1,7 +1,7 @@
-Mesd\Standard\UnitBundle\Entity\Unit:
+Mesd\StandardUnitBundle\Entity\Unit:
     type: entity
     table: unit
-    repositoryClass: Mesd\Standard\UnitBundle\Repository\UnitRepository
+    repositoryClass: Mesd\StandardUnitBundle\Repository\UnitRepository
     fields:
         id:
             type: integer

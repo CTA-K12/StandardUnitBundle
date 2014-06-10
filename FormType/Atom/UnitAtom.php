@@ -1,6 +1,6 @@
 <?php
 
-namespace Mesd\Standard\UnitBundle\FormType\Atom;
+namespace Mesd\StandardUnitBundle\FormType\Atom;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -46,7 +46,7 @@ class UnitAtom extends AbstractType
 
         $resolver->setDefaults(
             array(
-                'class'         => 'Mesd\Standard\UnitBundle\Entity\Unit' ,
+                'class'         => 'Mesd\StandardUnitBundle\Entity\Unit' ,
                 'attr'          => $attr                                  ,
                 'new_attr'      => array()                                ,
                 'label'         => 'Unit'                                 ,

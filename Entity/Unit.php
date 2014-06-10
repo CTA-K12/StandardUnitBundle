@@ -1,11 +1,11 @@
 <?php
 
-namespace Mesd\Standard\UnitBundle\Entity;
+namespace Mesd\StandardUnitBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Mesd\Standard\UnitBundle\Entity\Unit
+ * Mesd\StandardUnitBundle\Entity\Unit
  */
 class Unit
 {

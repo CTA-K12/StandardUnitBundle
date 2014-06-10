@@ -1,7 +1,7 @@
 <?php
-namespace Mesd\Standard\UnitBundle\DataFixtures\ORM;
+namespace Mesd\StandardUnitBundle\DataFixtures\ORM;
 
-use Mesd\Standard\UnitBundle\Entity\Unit;
+use Mesd\StandardUnitBundle\Entity\Unit;
 use Doctrine\Common\Persistence\ObjectManager;
 use MESD\DoctrineExtensions\DependentFixtureBundle\DataFixtures\AbstractDependentFixture;
 

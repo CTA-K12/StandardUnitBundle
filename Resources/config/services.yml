@@ -1,17 +1,17 @@
 parameters:
-#    mesd_standard_unit.example.class: Mesd\Standard\UnitBundle\Example
+#    mesd_standard_unit.example.class: Mesd\StandardUnitBundle\Example
 
 services:
     MesdStandardUnitBundle.form.type.unit:
         # this is an entity type, it uses those options
-        class: Mesd\Standard\UnitBundle\FormType\Atom\UnitAtom
+        class: Mesd\StandardUnitBundle\FormType\Atom\UnitAtom
         arguments: [ "@doctrine.orm.entity_manager", "@security.context" ]
         tags:
             - { name: form.type, alias: unit }
 
     MesdStandardUnitBundle.form.type.timeunit:
         # this is an entity type, it uses those options
-        class: Mesd\Standard\UnitBundle\FormType\Atom\TimeUnitAtom
+        class: Mesd\StandardUnitBundle\FormType\Atom\TimeUnitAtom
         arguments: [ "@doctrine.orm.entity_manager", "@security.context" ]
         tags:
             - { name: form.type, alias: timeunit }

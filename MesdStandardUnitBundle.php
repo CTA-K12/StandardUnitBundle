@@ -1,6 +1,6 @@
 <?php
 
-namespace Mesd\Standard\UnitBundle;
+namespace Mesd\StandardUnitBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
