@@ -4,7 +4,7 @@
     "type": "symfony-bundle",
     "description": "Standard Unit bundle",
     "autoload": {
-        "psr-0": { "Mesd\\Standard\\UnitBundle": "" }
+        "psr-0": { "Mesd\\StandardUnitBundle": "" }
     },
-    "target-dir": "Mesd/Standard/UnitBundle"
+    "target-dir": "Mesd/StandardUnitBundle"
 }
