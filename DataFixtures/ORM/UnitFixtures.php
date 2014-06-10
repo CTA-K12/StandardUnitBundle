@@ -3,7 +3,7 @@ namespace Mesd\StandardUnitBundle\DataFixtures\ORM;
 
 use Mesd\StandardUnitBundle\Entity\Unit;
 use Doctrine\Common\Persistence\ObjectManager;
-use MESD\DoctrineExtensions\DependentFixtureBundle\DataFixtures\AbstractDependentFixture;
+use Mesd\DoctrineExtensions\DependentFixtureBundle\DataFixtures\AbstractDependentFixture;
 
 class UnitFixtures extends AbstractDependentFixture
 {
