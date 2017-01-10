@@ -5,13 +5,13 @@ services:
     MesdStandardUnitBundle.form.type.unit:
         # this is an entity type, it uses those options
         class: Mesd\StandardUnitBundle\FormType\Atom\UnitAtom
-        arguments: [ "@doctrine.orm.entity_manager", "@security.context" ]
+        arguments: [ ]
         tags:
             - { name: form.type, alias: unit }
 
     MesdStandardUnitBundle.form.type.timeunit:
         # this is an entity type, it uses those options
         class: Mesd\StandardUnitBundle\FormType\Atom\TimeUnitAtom
-        arguments: [ "@doctrine.orm.entity_manager", "@security.context" ]
+        arguments: [  ]
         tags:
             - { name: form.type, alias: timeunit }

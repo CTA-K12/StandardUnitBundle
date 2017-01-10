@@ -4,40 +4,34 @@ namespace Mesd\StandardUnitBundle\FormType\Atom;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Symfony\Component\OptionsResolver\Options;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 class UnitAtom extends AbstractType
 {
-
-    private $em;
-
-    public function __construct( $em, $securityContext ) {
-        $this->em=$em;
-    }
-
-    public function buildForm( FormBuilderInterface $builder, array $options ) {
-    }
-
+    public function buildForm(
+        FormBuilderInterface $builder,
+        array                $options
+    ) {}
     /**
      *
      *
      * @param object  $resolver
      */
-    public function setDefaultOptions( OptionsResolverInterface $resolver ) {
-        $attr = function( Options $options ) {
-
+    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+        $attr = function (Options $options) {
             $default =
-                array(
-                'class'                           => 's2'            ,
-                'data-select2-minimuminputlength' => 0               ,
-                'data-select2-limit'              => 10              ,
-                'data-select2-placeholder'        => 'Select Unit'   ,
-                'data-select2-allowclear'         => true            ,
-            );
+            [
+                'class'                           => 's2',
+                'data-select2-minimuminputlength' => 0,
+                'data-select2-limit'              => 10,
+                'data-select2-placeholder'        => 'Select Unit',
+                'data-select2-allowclear'         => true,
+            ];
 
-            if ( isset( $options['new_attr'] ) ) {
-                return array_replace( $default, $options['new_attr'] );
+            if (isset($options['new_attr'])) {
+                return array_replace($default, $options['new_attr']);
             } else {
                 return $default;
             }
@@ -45,30 +39,31 @@ class UnitAtom extends AbstractType
         };
 
         $resolver->setDefaults(
-            array(
-                'class'         => 'Mesd\StandardUnitBundle\Entity\Unit' ,
-                'attr'          => $attr                                  ,
-                'new_attr'      => array()                                ,
-                'label'         => 'Unit'                                 ,
-                'label_attr'    => array( 'class' => 'txtl' )             ,
-                'data_class'    => null                                   ,
-                'empty_value'   => ''                                     ,
+            [
+                'class'         => 'Mesd\StandardUnitBundle\Entity\Unit',
+                'attr'          => $attr,
+                'new_attr'      => [],
+                'label'         => 'Unit',
+                'label_attr'    => ['class' => 'txtl'],
+                'data_class'    => null,
+                'empty_value'   => '',
                 'query_builder' =>
-                function ( $repository ) {
-                    $qb = $repository->createQueryBuilder( 'u' )
-                    ->addOrderBy( 'u.shortName' );
+                function ($repository) {
+                    $qb = $repository->createQueryBuilder('u')
+                        ->addOrderBy('u.shortName');
 
                     return $qb;
-                }
+                },
 
-            )
+            ]
         );
 
-        $resolver->setOptional( array( 'new_attr' ) );
+        $resolver->setOptional(['new_attr']);
 
     }
 
-    public function getParent() {
+    public function getParent()
+    {
         return 'entity';
     }
 
@@ -77,8 +72,8 @@ class UnitAtom extends AbstractType
      *
      * @return unknown
      */
-    public function getName() {
+    public function getName()
+    {
         return 'unit';
     }
-
 }
